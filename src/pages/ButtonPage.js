@@ -3,8 +3,8 @@ import Button from "../components/Button";
 
 function ButtonPage() {
   return (
-    <div className="flex flex-row m-8 justify-around w-full">
-      <div className="flex-column justify-evenly">
+    <div className="flex flex-row m-10 justify-evenly items-center w-4/5 mx-auto my-10 bg-indigo-100 rounded-lg">
+      <div className="flex flex-col h-96 items-center justify-evenly">
         <div>
           <Button primary>
             <GoBell />
@@ -27,7 +27,7 @@ function ButtonPage() {
           <Button danger>Danger!</Button>
         </div>
       </div>
-      <div className="flex-column">
+      <div className="flex flex-col h-96 items-center justify-evenly">
         <div>
           <Button primary rounded>
             Primary
@@ -54,7 +54,7 @@ function ButtonPage() {
           </Button>
         </div>
       </div>
-      <div className="flex-column">
+      <div className="flex flex-col h-96 items-center justify-evenly">
         <div>
           <Button primary outline>
             Primary
@@ -81,7 +81,7 @@ function ButtonPage() {
           </Button>
         </div>
       </div>
-      <div className=" flex-column">
+      <div className="flex flex-col h-96 items-center justify-evenly">
         <div>
           <Button primary outline rounded>
             Primary
