@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 function ButtonPage() {
   return (
-    <div className="flex flex-row m-10 justify-evenly items-center w-4/5 mx-auto my-10 bg-indigo-100 rounded-lg">
+    <div className="flex flex-row m-10 justify-evenly items-center m-auto bg-zinc-100 border-zinc-200 border-2 rounded-lg">
       <div className="flex flex-col h-96 items-center justify-evenly">
         <div>
           <Button primary>
