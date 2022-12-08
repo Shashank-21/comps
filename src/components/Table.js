@@ -4,14 +4,14 @@ function Table({ data, config, keyFn }) {
   const renderedRows = data.map((rowData) => {
     const renderedCells = config.map((column) => {
       return (
-        <td className="p-2" key={column.label}>
+        <td className="px-4 py-2 mx-auto text-center border" key={column.label}>
           {column.render(rowData)}
         </td>
       );
     });
 
     return (
-      <tr className="border-b" key={keyFn(rowData)}>
+      <tr className="border" key={keyFn(rowData)}>
         {renderedCells}
       </tr>
     );
@@ -21,13 +21,17 @@ function Table({ data, config, keyFn }) {
     if (column.header) {
       return <Fragment key={column.label}>{column.header()}</Fragment>;
     }
-    return <th key={column.label}>{column.label}</th>;
+    return (
+      <th className="px-8 mx-4 text-center border" key={column.label}>
+        {column.label}
+      </th>
+    );
   });
 
   return (
     <table className="table-auto border-spacing-2">
       <thead>
-        <tr className="border-b-2">{renderedHeaders}</tr>
+        <tr className="border-2">{renderedHeaders}</tr>
       </thead>
       <tbody>{renderedRows}</tbody>
     </table>

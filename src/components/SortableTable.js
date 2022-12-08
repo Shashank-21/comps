@@ -52,7 +52,7 @@ function SortableTable(props) {
           className="cursor-pointer hover:bg-zinc-100"
           onClick={() => setSortColumn(column.label)}
         >
-          <div className="flex items-center">
+          <div className="flex justify-around px-4 py-2 mx-4 text-center ">
             {getIcons(column.label, sortBy, sortOrder)}
             {column.label}
           </div>
